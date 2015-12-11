@@ -1,0 +1,13 @@
+#Vagrant
+.vagrant/
+/vagrant_ansible_inventory_*
+/provision/ansible/roles/
+
+#Bower
+bower_components
+
+#Node modules
+node_modules
+
+#Sass
+.sass-cache
