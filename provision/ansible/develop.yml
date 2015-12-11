@@ -14,7 +14,7 @@
       mysql_users:
         - name: "{{ project }}"
           privs:
-            - "{{ company }}".*:ALL
+            - "{{ project }}.*:ALL"
           hosts:
             - localhost
     - role: megheaiulian.php
