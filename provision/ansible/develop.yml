@@ -1,0 +1,21 @@
+---
+- hosts: all
+  sudo: true
+  roles:
+    - role: megheaiulian.apache
+      apache_vhost_default: false
+      apache_vhosts:
+        - name: "{{ project }}"
+          path: /vagrant/web
+          host: "{{ project }}.local"
+    - role: megheaiulian.mysql
+      mysql_databases:
+        - name: "{{ project }}"
+          path: '/vagrant/config/db/company.sql'
+      mysql_users:
+        - name: "{{ project }}"
+          privs:
+            - "{{ company }}".*:ALL
+          hosts:
+            - localhost
+    - role: megheaiulian.php
