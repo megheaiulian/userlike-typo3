@@ -18,3 +18,19 @@
           hosts:
             - localhost
     - role: megheaiulian.php
+  tasks:
+    - name: install composer
+      shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin creates=/usr/local/bin/composer
+      tags: composer
+
+    - name: rename composer.phar to composer
+      shell: mv /usr/local/bin/composer.phar /usr/local/bin/composer creates=/usr/local/bin/composer
+      tags: composer
+
+    - name: make composer executable
+      file: path=/usr/local/bin/composer mode=a+x state=file
+      tags: composer
+
+    - composer: command=update working_dir=/vagrant prefer_dist=yes
+    - ini_file: dest=/etc/php/apache/php.ini section=global option=always_populate_raw_post_data value=-1
+      notify: restart apache

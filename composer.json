@@ -1,0 +1,25 @@
+{
+  "repositories": [
+    { "type": "composer", "url": "http://composer.typo3.org/" }
+  ],
+  "name": "my-vendor/my-typo3-cms-distribution",
+  "require": {
+    "typo3/cms": "7.x-dev"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "web"
+    }
+  }
+	,"scripts": {
+    "post-update-cmd": [
+      "php -r \"unlink('web/index.php');\"",
+      "php -r \"copy('vendor/typo3/cms/index.php', 'web/index.php');\""
+    ],
+    "post-install-cmd": [
+      "php -r \"unlink('web/index.php');\"",
+      "php -r \"copy('vendor/typo3/cms/index.php', 'web/index.php');\""
+    ]
+  }
+}
