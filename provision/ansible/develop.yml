@@ -11,6 +11,7 @@
     - role: megheaiulian.mysql
       mysql_databases:
         - name: "{{ project }}"
+          path: /vagrant/db/dev-master.sql
       mysql_users:
         - name: "{{ project }}"
           privs:
