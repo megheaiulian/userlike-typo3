@@ -2,6 +2,3 @@
 	path = web/typo3conf/ext/userlike
 	url = git@github.com:megheaiulian/UserlikeIntegrations.git
 	branch = typo3
-	[submodule "vendor/userlike"]
-	path = vendor/userlike
-	url = git@github.com:megheaiulian/UserlikeIntegrations.git
