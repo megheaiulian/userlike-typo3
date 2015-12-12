@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "26d472a834b6831b031b0be9a5c7fb2d",
-    "content-hash": "1ba7f13bf0d60d4b87168d72fbad6bf3",
+    "hash": "e25cd18d79d0230cf2f1dd5eb11ff4f4",
+    "content-hash": "a345f0ba722c01bc295eacb0ada1261e",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -60,7 +60,7 @@
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
@@ -166,7 +166,7 @@
         },
         {
             "name": "pear/net_url2",
-            "version": "v2.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Net_URL2.git",
@@ -227,7 +227,7 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
@@ -332,7 +332,7 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
@@ -381,22 +381,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "9e45edca52cc9c954680072c93e621f8b71fab26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/9e45edca52cc9c954680072c93e621f8b71fab26",
+                "reference": "9e45edca52cc9c954680072c93e621f8b71fab26",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -415,7 +423,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2015-06-02 13:48:41"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -472,16 +480,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.7",
+            "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
+                "reference": "7fb8a8c9756690171ecd0521e3bbaef377f2bed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
+                "url": "https://api.github.com/repos/symfony/console/zipball/7fb8a8c9756690171ecd0521e3bbaef377f2bed9",
+                "reference": "7fb8a8c9756690171ecd0521e3bbaef377f2bed9",
                 "shasum": ""
             },
             "require": {
@@ -527,20 +535,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-18 09:54:26"
+            "time": "2015-12-05 17:37:09"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.7",
+            "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9"
+                "reference": "937edcbac3f2dd3187c56cf90368867d55dee991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/a06a0c0ff7db3736a50d530c908cca547bf13da9",
-                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/937edcbac3f2dd3187c56cf90368867d55dee991",
+                "reference": "937edcbac3f2dd3187c56cf90368867d55dee991",
                 "shasum": ""
             },
             "require": {
@@ -576,11 +584,11 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 20:10:21"
+            "time": "2015-12-05 11:06:38"
         },
         {
             "name": "typo3/class-alias-loader",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/class-alias-loader.git",
@@ -638,16 +646,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "dev-master",
+            "version": "7.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "725dae22868818ca2bbd8fd5479deef0a505c272"
+                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/725dae22868818ca2bbd8fd5479deef0a505c272",
-                "reference": "725dae22868818ca2bbd8fd5479deef0a505c272",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
+                "reference": "a2585ba26b9df87ef67fdbb4f53d2f1a891d919f",
                 "shasum": ""
             },
             "require": {
@@ -666,7 +674,7 @@
                 "symfony/console": "~2.7.0",
                 "symfony/finder": "~2.7.0",
                 "typo3/class-alias-loader": "^1.0",
-                "typo3/cms-composer-installers": "^1.2.5"
+                "typo3/cms-composer-installers": "^1.2.2"
             },
             "replace": {
                 "typo3/cms-about": "self.version",
@@ -832,11 +840,11 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-12-11 11:49:46"
+            "time": "2015-11-10 13:37:21"
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.2.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
@@ -901,10 +909,8 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "typo3/cms": 20
-    },
+    "minimum-stability": "dev",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
