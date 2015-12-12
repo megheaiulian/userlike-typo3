@@ -1,0 +1,4 @@
+[submodule "web/typo3conf/ext/userlike"]
+	path = web/typo3conf/ext/userlike
+	url = git@github.com:megheaiulian/UserlikeIntegrations.git
+	branch = typo3

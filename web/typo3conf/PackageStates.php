@@ -362,6 +362,15 @@ return array (
       array (
       ),
     ),
+    'userlike' => 
+    array (
+      'composerName' => 'typo3-ter/userlike',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/userlike/src/userlike/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'adodb' => 
     array (
       'composerName' => 'typo3/cms-adodb',
