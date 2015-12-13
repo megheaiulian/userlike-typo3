@@ -22,5 +22,10 @@
       "php -r \"unlink('web/index.php');\"",
       "php -r \"copy('vendor/typo3/cms/index.php', 'web/index.php');\""
     ]
+  },
+	"autoload": {
+    "psr-4": {
+      "UserlikeChat\\Userlike\\": "web/typo3conf/ext/userlike/src/userlike/Classes/"
+    }
   }
 }
