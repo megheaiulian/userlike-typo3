@@ -1,10 +1,11 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$P$CoKe5FhFcj9Zrun3oCYLlh7N4v0cHS0',
         'loginSecurityLevel' => 'rsa',
+        'versionNumberInFilename' => '0',
     ],
     'DB' => [
         'database' => 'userlike-typo3',
@@ -16,15 +17,30 @@ return [
     ],
     'EXT' => [
         'extConf' => [
+            'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:1:"1";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
+            'userlike' => 'a:0:{}',
+        ],
+    ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [],
         ],
     ],
     'FE' => [
-        'debug' => false,
+        'debug' => true,
         'loginSecurityLevel' => 'rsa',
     ],
     'GFX' => [
+        'colorspace' => 'RGB',
+        'im' => '1',
+        'im_mask_temp_ext_gif' => '1',
+        'im_path' => '/usr/bin/',
+        'im_path_lzw' => '/usr/bin/',
+        'im_v5effects' => '0',
+        'im_version_5' => 'im6',
+        'image_processing' => '1',
         'jpg_quality' => '80',
     ],
     'INSTALL' => [
@@ -66,16 +82,21 @@ return [
                 ],
             ],
         ],
-        'clearCacheSystem' => false,
-        'devIPmask' => '',
-        'displayErrors' => 0,
-        'enableDeprecationLog' => false,
+        'clearCacheSystem' => true,
+        'debug' => 1,
+        'debugExceptionHandler' => '',
+        'devIPmask' => '*',
+        'displayErrors' => 1,
+        'enableDLOG' => 1,
+        'enableDeprecationLog' => 'file',
+        'enable_exceptionDLOG' => 1,
         'encryptionKey' => 'ebdd030fb8d6965969ff8799c55e60d432f25eda216bb3b0a47d8523cbf305357d68c46f3cad4ed601037845535b94dd',
+        'exceptionalErrors' => 28674,
         'isInitialDatabaseImportDone' => true,
         'isInitialInstallationInProgress' => false,
         'sitename' => 'UserLike Typo3 Test',
-        'sqlDebug' => 0,
-        'systemLogLevel' => 2,
+        'sqlDebug' => 1,
+        'systemLogLevel' => 0,
         't3lib_cs_convMethod' => 'mbstring',
         't3lib_cs_utils' => 'mbstring',
     ],
