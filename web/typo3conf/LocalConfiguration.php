@@ -1,8 +1,9 @@
 <?php
 return [
     'BE' => [
+        'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$P$C8iYoJgtacmrYCSLxBlXVsIreCmhhE1',
+        'installToolPassword' => '$P$CoKe5FhFcj9Zrun3oCYLlh7N4v0cHS0',
         'loginSecurityLevel' => 'rsa',
     ],
     'DB' => [
@@ -20,15 +21,62 @@ return [
         ],
     ],
     'FE' => [
+        'debug' => false,
         'loginSecurityLevel' => 'rsa',
     ],
     'GFX' => [
         'jpg_quality' => '80',
     ],
+    'INSTALL' => [
+        'wizardDone' => [
+            'TYPO3\CMS\Install\Updates\AccessRightParametersUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\ContentTypesToTextMediaUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\LanguageIsoCodeUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MediaceExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateMediaToAssetsForTextMediaCe' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateShortcutUrlsAgainUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\OpenidExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\PageShortcutParentUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\ProcessedFileChecksumUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\TableFlexFormToTtContentFieldsUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\WorkspacesNotificationSettingsUpdate' => 1,
+            'TYPO3\CMS\Rtehtmlarea\Hook\Install\DeprecatedRteProperties' => 1,
+            'TYPO3\CMS\Rtehtmlarea\Hook\Install\RteAcronymButtonRenamedToAbbreviation' => 1,
+        ],
+    ],
+    'MAIL' => [
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
+    ],
     'SYS' => [
-        'encryptionKey' => '71b96a1a2e1165643d9f11cdedd67a8ccc738ee23d71e6b8578545f2735e29a2a1a99d649e750b5ff011db2d16ead62f',
-        'isInitialDatabaseImportDone' => false,
-        'isInitialInstallationInProgress' => true,
+        'caching' => [
+            'cacheConfigurations' => [
+                'extbase_object' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend',
+                    'groups' => [
+                        'system',
+                    ],
+                    'options' => [
+                        'defaultLifetime' => 0,
+                    ],
+                ],
+            ],
+        ],
+        'clearCacheSystem' => false,
+        'devIPmask' => '',
+        'displayErrors' => 0,
+        'enableDeprecationLog' => false,
+        'encryptionKey' => 'ebdd030fb8d6965969ff8799c55e60d432f25eda216bb3b0a47d8523cbf305357d68c46f3cad4ed601037845535b94dd',
+        'isInitialDatabaseImportDone' => true,
+        'isInitialInstallationInProgress' => false,
         'sitename' => 'UserLike Typo3 Test',
+        'sqlDebug' => 0,
+        'systemLogLevel' => 2,
+        't3lib_cs_convMethod' => 'mbstring',
+        't3lib_cs_utils' => 'mbstring',
     ],
 ];
