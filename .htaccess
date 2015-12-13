@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^userlike\-typo3\.local$
+RewriteRule (.*) $1 [E=TYPO3_CONTEXTevelopment]
