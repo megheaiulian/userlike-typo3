@@ -32,6 +32,5 @@
       file: path=/usr/local/bin/composer mode=a+x state=file
       tags: composer
 
-    - composer: command=update working_dir=/vagrant prefer_dist=yes
-    - ini_file: dest=/etc/php/apache/php.ini section=global option=always_populate_raw_post_data value=-1
-      notify: restart apache
+    - name: install composer deps
+      composer: command=update working_dir=/vagrant prefer_dist=yes
