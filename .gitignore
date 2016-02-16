@@ -2,6 +2,7 @@
 .vagrant/
 /vagrant_ansible_inventory_*
 /provision/ansible/roles/
+/provision/ansible/credentials/
 
 #Bower
 bower_components
@@ -17,3 +18,4 @@ node_modules
 /web/typo3temp/
 /web/typo3
 /web/fileadmin/_temp_/
+/typo3_src/
