@@ -5,27 +5,15 @@
   "name": "my-vendor/my-typo3-cms-distribution",
 	"minimum-stability": "dev",
   "require": {
-    "typo3/cms": "7.6.0"
+    "typo3/cms": "6.2.17",
+		"typo3-ter/userlike":"1.1.0",
+		"typo3-ter/introduction": "2.2.3"
+
   },
   "extra": {
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": "web"
-    }
-  }
-	,"scripts": {
-    "post-update-cmd": [
-      "php -r \"unlink('web/index.php');\"",
-      "php -r \"copy('vendor/typo3/cms/index.php', 'web/index.php');\""
-    ],
-    "post-install-cmd": [
-      "php -r \"unlink('web/index.php');\"",
-      "php -r \"copy('vendor/typo3/cms/index.php', 'web/index.php');\""
-    ]
-  },
-	"autoload": {
-    "psr-4": {
-      "UserlikeChat\\Userlike\\": "web/typo3conf/ext/userlike/src/userlike/Classes/"
     }
   }
 }

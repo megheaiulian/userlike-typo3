@@ -1,17 +1,20 @@
 ---
 - hosts: all
   sudo: true
+  vars:
+      project: 'userlike-typo3'
   roles:
     - role: megheaiulian.apache
       apache_vhost_default: false
       apache_vhosts:
         - name: "{{ project }}"
-          path: /vagrant/web
+          path: /vagrant/
           host: "{{ project }}.local"
     - role: megheaiulian.mysql
       mysql_databases:
         - name: "{{ project }}"
-          path: /vagrant/db/7.6.0-start.sql
+          state: absent
+        - name: "{{ project }}"
       mysql_users:
         - name: "{{ project }}"
           privs:

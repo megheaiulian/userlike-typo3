@@ -46,7 +46,6 @@ Vagrant.configure(2) do |config|
 		dev.vm.provision "shell", path: "provision/shell/ansible.sh"
 		dev.vm.provision ansible do |ansible|
 			ansible.playbook = "provision/ansible/develop.yml"
-			ansible.extra_vars = {project: project}
 		end
 	end
 end

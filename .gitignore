@@ -15,7 +15,14 @@ node_modules
 
 #composer
 /vendor
+#Typo3 7.x
 /web/typo3temp/
 /web/typo3
 /web/fileadmin/_temp_/
+
+#Typo3 6.x
 /typo3_src/
+/typo3conf/
+/typo3temp/
+/uploads/
+/fileadmin/
