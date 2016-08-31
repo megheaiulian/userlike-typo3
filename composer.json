@@ -1,6 +1,6 @@
 {
   "repositories": [
-    { "type": "composer", "url": "http://composer.typo3.org/" }
+    { "type": "composer", "url": "https://composer.typo3.org/" }
   ],
   "name": "my-vendor/my-typo3-cms-distribution",
 	"minimum-stability": "dev",
