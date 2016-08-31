@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  sudo: true
+  become: true
   roles:
     - role: megheaiulian.apache
       apache_vhost_default: false
@@ -33,4 +33,5 @@
       tags: composer
 
     - name: install composer deps
+      become: false
       composer: command=update working_dir=/vagrant prefer_dist=yes
