@@ -31,7 +31,7 @@ Vagrant.configure(2) do |config|
 
 	#LXC - Linux only
 	config.vm.provider :lxc do |lxc,ovrd|
-		ovrd.vm.box = 'fgrehm/trusty64-lxc'
+		ovrd.vm.box = 'aravind/xenial-lxc-amd64'
 		lxc.backingstore = 'dir'
 		lxc.customize 'cgroup.memory.limit_in_bytes', '512M'
 		lxc.customize 'aa_allow_incomplete', 1

@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/gregoryolsen/vagrant-lxc.git
+  revision: 3a48d46c303b0f1a5028c11e37a3d3fb0a129e11
+  branch: fix-sudo-whitelist-lxcpath
+  specs:
+    vagrant-lxc (1.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -75,7 +82,6 @@ GEM
       winrm (~> 1.6)
       winrm-fs (~> 0.3.0)
     vagrant-hostsupdater (1.0.2)
-    vagrant-lxc (1.2.1)
     vagrant-vbguest (0.11.0)
       i18n
       log4r
@@ -101,7 +107,7 @@ PLATFORMS
 DEPENDENCIES
   vagrant
   vagrant-hostsupdater
-  vagrant-lxc
+  vagrant-lxc!
   vagrant-vbguest
 
 BUNDLED WITH
