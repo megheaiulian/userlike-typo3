@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7652c552a6b898e0da8d290ca3ffd310",
-    "content-hash": "a345f0ba722c01bc295eacb0ada1261e",
+    "hash": "100be135612709e7b107b0b63ce8c43f",
+    "content-hash": "b108c92c28a70205e70af36cb4fcc368",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
+                "reference": "416fb8ad1d095a87f1d21bc40711843cd122fd4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/416fb8ad1d095a87f1d21bc40711843cd122fd4a",
+                "reference": "416fb8ad1d095a87f1d21bc40711843cd122fd4a",
                 "shasum": ""
             },
             "require": {
@@ -110,25 +110,25 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14 21:17:01"
+            "time": "2016-03-31 10:24:22"
         },
         {
             "name": "pear/http_request2",
-            "version": "v2.2.1",
+            "version": "dev-trunk",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/HTTP_Request2.git",
-                "reference": "d6c81670c504045248c1afdf896bb9a3288158de"
+                "reference": "3599cf0fe455a4e281da464f6510bfc5c2ce54c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/d6c81670c504045248c1afdf896bb9a3288158de",
-                "reference": "d6c81670c504045248c1afdf896bb9a3288158de",
+                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/3599cf0fe455a4e281da464f6510bfc5c2ce54c4",
+                "reference": "3599cf0fe455a4e281da464f6510bfc5c2ce54c4",
                 "shasum": ""
             },
             "require": {
-                "pear/net_url2": ">=2.0.0",
-                "pear/pear_exception": "*",
+                "pear/net_url2": "^2.2.0",
+                "pear/pear_exception": "^1.0.0",
                 "php": ">=5.2.0"
             },
             "suggest": {
@@ -138,20 +138,27 @@
                 "lib-openssl": "Allows handling SSL requests when not using cURL."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-trunk": "2.2-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "HTTP_Request2": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Alexey Borzov",
-                    "email": "avb@php.net",
-                    "role": "Developer HTML_Common2"
+                    "email": "avb@php.net"
                 }
             ],
             "description": "Provides an easy way to perform HTTP requests.",
@@ -162,7 +169,7 @@
                 "http",
                 "request"
             ],
-            "time": "2014-01-16 17:27:21"
+            "time": "2016-02-13 20:20:39"
         },
         {
             "name": "pear/net_url2",
@@ -170,12 +177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Net_URL2.git",
-                "reference": "fa9b1ecb3c3e640d4a54d58d681a4cb7524f209e"
+                "reference": "43a87606daf52efe6685c92131be083143108e37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Net_URL2/zipball/fa9b1ecb3c3e640d4a54d58d681a4cb7524f209e",
-                "reference": "fa9b1ecb3c3e640d4a54d58d681a4cb7524f209e",
+                "url": "https://api.github.com/repos/pear/Net_URL2/zipball/43a87606daf52efe6685c92131be083143108e37",
+                "reference": "43a87606daf52efe6685c92131be083143108e37",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +230,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2015-04-18 17:36:57"
+            "time": "2016-04-18 22:24:01"
         },
         {
             "name": "pear/pear_exception",
@@ -328,6 +335,7 @@
                 "idna",
                 "php"
             ],
+            "abandoned": "mso/idna-convert",
             "time": "2014-12-26 04:51:08"
         },
         {
@@ -336,12 +344,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
             "require": {
@@ -369,6 +377,7 @@
                 }
             ],
             "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
             "keywords": [
                 "http",
                 "http-message",
@@ -377,7 +386,7 @@
                 "request",
                 "response"
             ],
-            "time": "2015-05-04 20:22:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",
@@ -385,12 +394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "9e45edca52cc9c954680072c93e621f8b71fab26"
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/9e45edca52cc9c954680072c93e621f8b71fab26",
-                "reference": "9e45edca52cc9c954680072c93e621f8b71fab26",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e",
                 "shasum": ""
             },
             "require": {
@@ -418,32 +427,33 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2015-06-02 13:48:41"
+            "time": "2016-01-06 21:40:42"
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.1",
+            "version": "v5.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421"
+                "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0697e6aa65c83edf97bb0f23d8763f94e3f11421",
-                "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
+                "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.1,<0.9.4"
+                "mockery/mockery": "~0.9.1"
             },
             "type": "library",
             "extra": {
@@ -476,7 +486,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2015-06-06 14:19:39"
+            "time": "2016-07-08 11:51:25"
         },
         {
             "name": "symfony/console",
@@ -484,12 +494,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "db64676a46f31e68c0b1a637fbcaa0ec5dad5b5e"
+                "reference": "86cbcb081ade8b9bd8617775b6984c5981192840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/db64676a46f31e68c0b1a637fbcaa0ec5dad5b5e",
-                "reference": "db64676a46f31e68c0b1a637fbcaa0ec5dad5b5e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/86cbcb081ade8b9bd8617775b6984c5981192840",
+                "reference": "86cbcb081ade8b9bd8617775b6984c5981192840",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +545,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-11 18:18:28"
+            "time": "2016-08-19 06:41:18"
         },
         {
             "name": "symfony/finder",
@@ -543,12 +553,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "937edcbac3f2dd3187c56cf90368867d55dee991"
+                "reference": "2716347131481656cc613d98ec12228bae81c8c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/937edcbac3f2dd3187c56cf90368867d55dee991",
-                "reference": "937edcbac3f2dd3187c56cf90368867d55dee991",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/2716347131481656cc613d98ec12228bae81c8c3",
+                "reference": "2716347131481656cc613d98ec12228bae81c8c3",
                 "shasum": ""
             },
             "require": {
@@ -584,7 +594,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-05 11:06:38"
+            "time": "2016-08-23 19:36:25"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -848,19 +858,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d"
+                "reference": "7a971eba18a93e1f8c913ce0e43027e4e7909dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/68dce62bbfed9912583de4a1db16df8feb8f7e2d",
-                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/7a971eba18a93e1f8c913ce0e43027e4e7909dc3",
+                "reference": "7a971eba18a93e1f8c913ce0e43027e4e7909dc3",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0"
             },
             "conflict": {
-                "composer/installers": "*"
+                "composer/installers": "<1.0.24 || >1.0.24"
             },
             "replace": {
                 "lw/typo3cms-installers": "*",
@@ -873,12 +883,12 @@
             "extra": {
                 "class": "TYPO3\\CMS\\Composer\\Installer\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "": "Classes/"
+                "psr-4": {
+                    "TYPO3\\CMS\\Composer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -893,10 +903,14 @@
                 {
                     "name": "Lars Peipmann",
                     "email": "lars@peipmann.de"
+                },
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io"
                 }
             ],
             "description": "TYPO3 CMS Installers",
-            "homepage": "http://forge.typo3.org/projects/team-composer",
+            "homepage": "https://github.com/TYPO3/CmsComposerInstallers",
             "keywords": [
                 "cms",
                 "core",
@@ -904,7 +918,7 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2015-11-03 21:19:57"
+            "time": "2016-07-05 14:39:36"
         }
     ],
     "packages-dev": [],
