@@ -1,6 +1,8 @@
 ---
 - hosts: all
   become: true
+  pre_tasks:
+    - apt_repository: repo='ppa:ondrej/php' update_cache=yes
   roles:
     - role: megheaiulian.apache
       apache_vhost_default: false
@@ -11,7 +13,7 @@
     - role: megheaiulian.mysql
       mysql_databases:
         - name: "{{ project }}"
-          path: /vagrant/db/7.6.0-start.sql
+          # path: /vagrant/db/7.6.0-start.sql
       mysql_users:
         - name: "{{ project }}"
           privs:
@@ -20,17 +22,18 @@
             - localhost
     - role: megheaiulian.php
       php_packages:
-        - name: php
+        - name: php7.0
         - name: libapache2-mod-php7.0
       php_common_packages:
-        - name: php-cgi
-        - name: php-gd
-        - name: php-curl
-        - name: php-xml
-        - name: php-mbstring
-        - name: php-zip
+        - name: php7.0-cgi
+        - name: php7.0-gd
+        - name: php7.0-curl
+        - name: php7.0-xml
+        - name: php7.0-mbstring
+        - name: php7.0-zip
+        - name: php7.0-soap
       php_extra_packages:
-        - name: php-mysql
+        - name: php7.0-mysql
   tasks:
     - name: install composer
       shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin creates=/usr/local/bin/composer
