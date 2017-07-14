@@ -43,7 +43,7 @@ Vagrant.configure(2) do |config|
 	config.vm.provider :virtualbox do |vb,ovrd|
 		vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant", "1"]
 		ovrd.vm.synced_folder *(windows ? share : nfsf)
-		vb.memory = 512
+		vb.memory = 1024
 	end
 
 	#hyperv

@@ -17,6 +17,12 @@ return [
         'fluid' => [
             'packagePath' => 'typo3/sysext/fluid/',
         ],
+        'frontend' => [
+            'packagePath' => 'typo3/sysext/frontend/',
+        ],
+        'fluid_styled_content' => [
+            'packagePath' => 'typo3/sysext/fluid_styled_content/',
+        ],
         'info' => [
             'packagePath' => 'typo3/sysext/info/',
         ],
@@ -32,8 +38,8 @@ return [
         'setup' => [
             'packagePath' => 'typo3/sysext/setup/',
         ],
-        'rtehtmlarea' => [
-            'packagePath' => 'typo3/sysext/rtehtmlarea/',
+        'rte_ckeditor' => [
+            'packagePath' => 'typo3/sysext/rte_ckeditor/',
         ],
         'rsaauth' => [
             'packagePath' => 'typo3/sysext/rsaauth/',
@@ -68,9 +74,6 @@ return [
         'cshmanual' => [
             'packagePath' => 'typo3/sysext/cshmanual/',
         ],
-        'css_styled_content' => [
-            'packagePath' => 'typo3/sysext/css_styled_content/',
-        ],
         'documentation' => [
             'packagePath' => 'typo3/sysext/documentation/',
         ],
@@ -80,14 +83,8 @@ return [
         'filelist' => [
             'packagePath' => 'typo3/sysext/filelist/',
         ],
-        'fluid_styled_content' => [
-            'packagePath' => 'typo3/sysext/fluid_styled_content/',
-        ],
         'form' => [
             'packagePath' => 'typo3/sysext/form/',
-        ],
-        'frontend' => [
-            'packagePath' => 'typo3/sysext/frontend/',
         ],
         'impexp' => [
             'packagePath' => 'typo3/sysext/impexp/',
@@ -112,9 +109,6 @@ return [
         ],
         't3editor' => [
             'packagePath' => 'typo3/sysext/t3editor/',
-        ],
-        't3skin' => [
-            'packagePath' => 'typo3/sysext/t3skin/',
         ],
         'tstemplate' => [
             'packagePath' => 'typo3/sysext/tstemplate/',
