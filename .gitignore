@@ -3,6 +3,7 @@
 /vagrant_ansible_inventory_*
 /provision/ansible/roles/
 /provision/ansible/credentials/
+*.retry
 
 #Bower
 bower_components
