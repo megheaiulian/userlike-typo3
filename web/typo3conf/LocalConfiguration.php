@@ -55,7 +55,7 @@ return [
                 ],
             ],
         ],
-        'debug' => 1,
+        'debug' => 1,
         'devIPmask' => '*',
         'displayErrors' => 1,
         'enableDLOG' => 1,
